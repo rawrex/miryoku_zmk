@@ -13,8 +13,5 @@
 #     shield: miryoku_xiao_right
 #
 ---
-include:
-  - board: seeeduino_xiao_ble
-    shield: miryoku_xiao_left
-  - board: seeeduino_xiao_ble
-    shield: miryoku_xiao_right 
+board: [ "seeeduino_xiao_ble" ]
+shield: [ "miryoku_xiao_left", "miryoku_xiao_right" ] 
