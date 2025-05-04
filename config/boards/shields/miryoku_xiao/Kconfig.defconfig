@@ -1,10 +1,14 @@
 # Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_MIRYOKU_XIAO_LEFT || SHIELD_MIRYOKU_XIAO_RIGHT
+if SHIELD_MIRYOKU_XIAO || SHIELD_MIRYOKU_XIAO_LEFT || SHIELD_MIRYOKU_XIAO_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "tbk_miryoku_ble"
+
+endif
+
+if SHIELD_MIRYOKU_XIAO_LEFT || SHIELD_MIRYOKU_XIAO_RIGHT
 
 config ZMK_SPLIT
     default y
