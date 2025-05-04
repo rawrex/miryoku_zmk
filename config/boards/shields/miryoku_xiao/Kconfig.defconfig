@@ -4,7 +4,7 @@
 if SHIELD_MIRYOKU_XIAO_LEFT || SHIELD_MIRYOKU_XIAO_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "tbk_miryoku_ble"
+    default "Miryoku Xiao"
 
 config ZMK_SPLIT
     default y
