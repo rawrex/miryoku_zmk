@@ -1,6 +1,3 @@
-# Copyright (c) 2023 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
 config SHIELD_MIRYOKU_XIAO
     def_bool $(shields_list_contains,miryoku_xiao)
 
