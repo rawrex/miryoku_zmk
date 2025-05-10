@@ -10,29 +10,30 @@
 // with Symbols and Numbers layers switched places
 #define MIRYOKU_LAYER_BASE \
 &kp Q,              &kp W,              &kp F,              &kp P,              &kp B,               &kp J,              &kp L,               &kp U,              &kp Y,              &kp SQT,           \
-&lt LGUI A,      &lt LALT R,      &lt LCTRL S,      &lt LSHIFT T,      &kp G,               &kp M,              &lt LSHIFT N,       &lt LCTRL E,      &lt LALT I,      &lt LGUI O,      \
-&lt U_BTN Z, &lt RALT X,      &kp C,              &kp D,              &kp V,               &kp K,              &kp H,               &kp COMMA,           &lt RALT DOT,    &lt U_BTN FSLH,\
-U_NP,              U_NP,              &lt U_MEDIA ESC,      &lt U_NAV SPACE,      &lt U_MS TAB,        &lt U_NUM ENTER,     &lt U_SYM BSPC,      &lt U_FUN DELETE,  U_NP,              U_NP
+&hml LGUI A,        &hml LALT R,        &hml LCTRL S,       &hml LSHFT T,       &kp G,               &kp M,              &hmr RSHFT N,        &hmr RCTRL E,        &hmr RALT I,        &hmr RGUI O,      \
+&lt U_BUTTON Z,    &mt RALT X,         &kp C,              &kp D,              &kp V,               &kp K,              &kp H,               &kp COMMA,          &mt RALT DOT,       &lt U_BUTTON FSLH,\
+&none,             &none,              &lt U_MEDIA ESC,    &lt U_NAV SPACE,    &lt U_MOUSE TAB,     &lt U_NUM RET,      &lt U_SYM BSPC,      &lt U_FUN DEL,      &none,              &none
 
+// Extra layer
 #define MIRYOKU_LAYER_EXTRA \
 &kp W,              &kp R,              &kp K,              &kp COMMA,           &kp Q,               &kp RBKT,           &kp S,              &kp Z,              &kp SQT,           &kp A,              \
-&lt LGUI P,      &lt LALT D,      &lt LCTRL Y,      &lt LSHIFT N,      &kp L,               &kp B,              &lt LSHIFT F,      &lt LCTRL J,      &lt LALT T,      &lt LGUI C,      \
-&lt U_BTN LBKT, &lt RALT G,      &kp H,              &kp V,              &kp U,               &kp M,              &kp E,              &kp QMARK,           &kp FSLH,           &kp PIPE,           \
-U_NP,              U_NP,              &lt U_MEDIA ESC,      &lt U_NAV SPACE,      &lt U_MS TAB,        &lt U_NUM ENTER,     &lt U_SYM BSPC,      &lt U_FUN DELETE,  U_NP,              U_NP
+&hml LGUI P,        &hml LALT D,        &hml LCTRL Y,       &hml LSHFT N,        &kp L,               &kp B,              &hmr RSHFT F,        &hmr RCTRL J,        &hmr RALT T,        &hmr RGUI C,      \
+&lt U_BUTTON LBKT, &mt RALT G,         &kp H,              &kp V,              &kp U,               &kp M,              &kp E,              &kp QMARK,          &kp FSLH,           &kp PIPE,           \
+&none,             &none,              &lt U_MEDIA ESC,    &lt U_NAV SPACE,    &lt U_MOUSE TAB,     &lt U_NUM RET,      &lt U_SYM BSPC,      &lt U_FUN DEL,      &none,              &none
 
 // Symbols layer 
 // Many symbols changed places to fit some of my preferences
 #define MIRYOKU_LAYER_SYM \
-&kp PIPE,    &kp EXCL,    &kp QMARK,    &kp DLLR,     &kp PLUS,    U_NA,   &mt U_BASE,           &mt U_EXTRA,        &mt U_TAP,          &mt U_BOOT,         \
-&kp CARET,    &kp AMPS,    &kp GRAVE,     &kp PRCNT,    &kp MINUS,    U_NA,   &kp LSHFT,           &kp LCTRL,           &kp LALT,           &kp LGUI,           \
-&kp HASH,    &kp TILDE,    &kp ASTRK,    &kp UNDER,    &kp AT,      U_NA,   &mt U_SYM,           &mt U_MS,           &kp RALT,           U_NA,              \
-U_NP,       U_NP,       &kp LPAR,    &kp RPAR,    &kp EQUAL,     U_NA,   U_NA,              U_NA,              U_NP,              U_NP
+&kp PIPE,          &kp EXCL,          &kp QMARK,         &kp DLLR,          &kp PLUS,          &none,              &u_td_u_base,       &u_td_u_extra,      &u_td_u_tap,        &u_td_boot,         \
+&kp CARET,         &kp AMPS,          &kp GRAVE,         &kp PRCNT,         &kp MINUS,         &none,              &kp LSHFT,          &kp LCTRL,          &kp LALT,           &kp LGUI,           \
+&kp HASH,          &kp TILDE,         &kp ASTRK,         &kp UNDER,         &kp AT,            &none,              &u_td_u_sym,        &u_td_u_mouse,      &kp RALT,           &none,              \
+&none,             &none,             &kp LPAR,          &kp RPAR,          &kp EQUAL,         &none,              &none,              &none,              &none,              &none
 
 // Numbers layer 
 // Minor changes in accordance with the symbols layer edits
 #define MIRYOKU_LAYER_NUM \
-&kp ASTRK,    &kp N7,       &kp N8,       &kp N9,       &kp PLUS,    U_NA,   &mt U_BASE,           &mt U_EXTRA,        &mt U_TAP,          &mt U_BOOT,         \
-&kp FSLH,    &kp N4,       &kp N5,       &kp N6,       &kp MINUS,    U_NA,   &kp LSHFT,           &kp LCTRL,           &kp LALT,           &kp LGUI,           \
-&kp DOT,     &kp N1,       &kp N2,       &kp N3,       &kp CARET,    U_NA,   &mt U_NUM,           &mt U_NAV,           &kp RALT,           U_NA,              \
-U_NP,       U_NP,       &kp DOT,     &kp N0,       &kp EQUAL,     U_NA,   U_NA,              U_NA,              U_NP,              U_NP
+&kp ASTRK,         &kp N7,            &kp N8,            &kp N9,            &kp PLUS,          &none,              &u_td_u_base,       &u_td_u_extra,      &u_td_u_tap,        &u_td_boot,         \
+&kp FSLH,          &kp N4,            &kp N5,            &kp N6,            &kp MINUS,         &none,              &kp LSHFT,          &kp LCTRL,          &kp LALT,           &kp LGUI,           \
+&kp DOT,           &kp N1,            &kp N2,            &kp N3,            &kp CARET,         &none,              &u_td_u_num,        &u_td_u_nav,        &kp RALT,           &none,              \
+&none,             &none,             &kp DOT,           &kp N0,            &kp EQUAL,         &none,              &none,              &none,              &none,              &none
 
