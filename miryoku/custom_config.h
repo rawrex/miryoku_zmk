@@ -6,6 +6,19 @@
 // Blank key
 #define ___ &none
 
+// Mouse definitions
+#define U_BTN1 &mkp MB1
+#define U_BTN2 &mkp MB2
+#define U_BTN3 &mkp MB3
+#define U_MS_U &mmv MOVE_UP
+#define U_MS_D &mmv MOVE_DOWN
+#define U_MS_L &mmv MOVE_LEFT
+#define U_MS_R &mmv MOVE_RIGHT
+#define U_WH_U &msc SCRL_UP
+#define U_WH_D &msc SCRL_DOWN
+#define U_WH_L &msc SCRL_LEFT
+#define U_WH_R &msc SCRL_RIGHT
+
 // Base layer 
 // with Symbols and Numbers layers switched places
 #define MIRYOKU_LAYER_BASE \
@@ -36,4 +49,11 @@
 &kp FSLH,          &kp N4,            &kp N5,            &kp N6,            &kp MINUS,         &none,              &kp LSHFT,          &kp LCTRL,          &kp LALT,           &kp LGUI,           \
 &kp DOT,           &kp N1,            &kp N2,            &kp N3,            &kp CARET,         &none,              &to U_NUM,           &to U_NAV,           &kp RALT,           &none,              \
 &none,             &none,             &kp DOT,           &kp N0,            &kp EQUAL,         &none,              &none,              &none,              &none,              &none
+
+// Mouse layer
+#define MIRYOKU_LAYER_MOUSE \
+&bootloader,       &none,             &none,             &to U_BASE,        &none,             &kp K_UNDO,         &kp K_PASTE,        &kp K_COPY,         &kp K_CUT,          &kp K_REDO,         \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &none,             &none,              U_MS_L,             U_MS_D,             U_MS_U,             U_MS_R,             \
+&none,             &kp RALT,          &to U_SYM,         &to U_MOUSE,       &none,             &none,              U_WH_L,             U_WH_D,             U_WH_U,             U_WH_R,             \
+&none,             &none,             &none,             &none,             &none,             U_BTN2,             U_BTN1,             U_BTN3,             &none,              &none
 

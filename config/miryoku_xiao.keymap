@@ -1,6 +1,20 @@
-// Copyright 2021 Manna Harbour
+// Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/42/corne.h"
-#include "../miryoku/miryoku.dtsi" 
+#include "../miryoku/miryoku.dtsi"
+
+#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+
+&mmv {
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <1500>;
+  delay-ms = <0>;
+};
+
+&msc {
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <5000>;
+  delay-ms = <0>;
+}; 
