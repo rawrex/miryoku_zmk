@@ -1,0 +1,14 @@
+# Copyright 2021 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build example tbkmini-xiao'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["seeeduino_xiao_ble"]'
+      shield: '["xiao_ble_left","xiao_ble_right"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_TAPDELAY"]'
+      alphas: '["ColemakDHK"]'
