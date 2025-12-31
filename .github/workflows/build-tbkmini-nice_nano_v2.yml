@@ -1,0 +1,13 @@
+name: 'Build example tbkmini-xiao with mouse'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["nice_left","nice_right"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR\n#define MIRYOKU_KLUDGE_TAPDELAY"]'
+      alphas: '["ColemakDHK"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      branches: '["petejohanson/zmk/feat/pointers-move-scroll"]'
