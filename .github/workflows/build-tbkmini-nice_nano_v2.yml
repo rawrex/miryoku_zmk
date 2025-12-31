@@ -1,4 +1,4 @@
-name: 'Build example tbkmini-xiao with mouse'
+name: 'Nice with mouse'
 on: workflow_dispatch
 jobs:
   build:
